@@ -7,7 +7,7 @@ LOCKFILE = 'Gemfile.lock'
 def parse_options
   options = {}
   OptionParser.new do |opts|
-    opts.banner = 'Usage: pin_versions.rb [--pessimistic]'
+    opts.banner = 'Usage: gemfile-pin-versions.rb [--pessimistic]'
     opts.on('--pessimistic', 'Use pessimistic constraint (~>) instead of strict version') do
       options[:pessimistic] = true
     end
